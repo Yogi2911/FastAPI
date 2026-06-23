@@ -1,4 +1,4 @@
-name: Build and deploy Python app to Azure Web App - FastAPI
+name: Build and deploy Python app to Azure Web App - FastAPI-
  
 on:
 
@@ -24,7 +24,9 @@ jobs:
  
     steps:
 
-      - uses: actions/checkout@v4
+      - name: Checkout code
+
+        uses: actions/checkout@v4
  
       - name: Set up Python version
 
@@ -62,7 +64,7 @@ jobs:
 
         with:
 
-          app-name: 'fastapi--ekdyb4epdxghemd0'   # ← fix this to your real app name
+          app-name: 'FastAPI-'
 
           slot-name: 'Production'
 
